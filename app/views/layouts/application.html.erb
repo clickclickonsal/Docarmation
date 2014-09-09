@@ -1,13 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Docarment</title>
+  <title>Docarmation</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  
   <%= csrf_meta_tags %>
+
+   <p class="notice"><%= notice %></p>
+   <p class="alert"><%= alert %></p>
+
 </head>
 <body>
-
+<hgroup>        
+  <h1 class="site-name">Docarmation</h1>
+  <h3 class="slogan">Vehicles have needs too...</h3>
+</hgroup>
+<div class="menu">
+   <ul>
+      <li><%= link_to "Home", homes_path %></li>
+      <li><%= link_to "My Vehicle" %>
+         <ul>
+            <li><%= link_to "Add a Vehicle", new_vehicle_path %></li>
+            <li><%= link_to "View My Vehicles", vehicles_path %></li>
+         </ul>
+      </li>
+      <li><%= link_to "Account" %>
+         <ul>
+            <li><%= link_to "Sign Up", new_user_registration_path %></li>
+            <li><%= link_to "Sign In", new_user_session_path %></li>
+            <li><%= link_to "Sign Out", destroy_user_session_path %></li>
+         </ul>
+      </li>
+   </ul>
+</div>
+<!-- <nav class="main-menu">
+  <ul class="sub-menu">
+    <li><a href="#">Home</a></li> -->
+    <!-- li><a href="#">My Car</a>
+    </li>
+    <li><a href="#">Decode My VIN</a>
+    </li>
+    <li><a href="#">Recalls for my Vehicle</a>
+    </li> -->
+    <!-- <li><a href="#">Account</a> -->
+      <!-- <ul>
+       	<li><a href="#">Sign Up</a></li>
+        <li><a href="#">Log In</a></li>
+        <li><a href="#">Log Out</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>   -->  
 <%= yield %>
 
 </body>

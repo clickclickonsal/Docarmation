@@ -13,3 +13,123 @@
  *= require_tree .
  *= require_self
  */
+.site-name {
+	text-align: center;
+	font-size: 60px;
+	margin-top: 50px
+}
+.slogan {
+	text-align: center;
+	margin-top: -50px
+}
+
+.sub-menu li {
+	display: inline;
+}
+
+.menu{
+border:none;
+border:0px;
+margin:0px;
+padding:0px;
+font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+font-size:25px;
+font-weight:bold;
+width: 60%;
+margin: auto;
+}
+.menu ul{
+background:#295;
+height:50px;
+list-style:none;
+margin:0px;
+padding:0px;
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+border-radius: 15px;
+-webkit-box-shadow: inset 0px 16px 0px 0px rgba(255, 255, 255, .1);
+-moz-box-shadow: inset 0px 16px 0px 0px rgba(255, 255, 255, .1);
+box-shadow: inset 0px 16px 0px 0px rgba(255, 255, 255, .1);
+}
+.menu li{
+float:left;
+padding:0px 0px 0px 15px; 
+}
+.menu li a{
+color:#000;
+display:block;
+font-weight:normal;
+line-height:50px;
+margin:0px;
+padding:0px 25px;
+text-align:center;
+text-decoration:none;
+text-align: center;
+}
+.menu li a:hover{
+background:#C60;
+color:#FFFFFF;
+text-decoration:none;
+-webkit-box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, .3);
+-moz-box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, .3);
+box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, .3);
+}
+.menu ul li:hover a{
+background:#C60;
+color:#FFFFFF;
+text-decoration:none;
+}
+.menu li ul{
+display:none;
+height:auto;
+padding:0px;
+margin:0px;
+border:0px;
+position:absolute;
+width:200px;
+z-index:200;
+}
+.menu li:hover ul{
+display:block; 
+}
+.menu li li {
+display:block;
+float:none;
+margin:0px;
+padding:0px;
+width:200px;
+background:#F93;
+/*this is where the rounded corners for the dropdown disappears*/
+}
+.menu li:hover li a{
+background:none;
+}
+.menu li ul a{
+display:block;
+height:50px;
+font-size:12px;
+font-style:normal;
+margin:0px;
+padding:0px 10px 0px 15px;
+text-align:left;
+}
+.menu li ul a:hover, .menu li ul li:hover a{
+border:0px;
+color:#ffffff;
+text-decoration:none;
+background:#C60;
+-webkit-box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, .3);
+-moz-box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, .3);
+box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, .3); 
+}
+
+span img {
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+

@@ -1,0 +1,41 @@
+<%= form_for(@maint, url: vehicle_maintenances_path) do |f| %>
+  <% if @maint.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@maint.errors.count, "error") %> prohibited this record from being saved:</h2>
+
+      <ul>
+      <% @maint.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <% m_types = ["Oil Change", "Tire Rotaton", "Vehicle Alignment", "Transmission Flush", "Coolant Flush", "Brake Flush", "Tire(s) Replacement", "Tire Balance"] %>
+  <select>
+    <% m_types.each do |type| %>
+      <option> <%= type %> </option>
+    <% end %>
+  </select>
+
+
+  
+  <div class="field">
+    <%= f.label :mileage %><br>
+    <%= f.text_field :mileage %>
+  </div>
+  <div class="field">
+    <%= f.label :shop_name %><br>
+    <%= f.text_field :shop_name %>
+  </div>
+  <div class="field">
+    <%= f.label :date %><br>
+    <%= f.date_select :date %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+
+

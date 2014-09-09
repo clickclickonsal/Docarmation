@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+  devise_for :users
+  
+  resources :homes, only: [:index]
+  resources :vehicles do
+    resources :maintenances, only: [:index, :new, :show, :create, :destroy]
+  end
+  root to: "vehicles#index"
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -24,6 +33,7 @@ Rails.application.routes.draw do
   #     collection do
   #       get 'sold'
   #     end
+
   #   end
 
   # Example resource route with sub-resources:
