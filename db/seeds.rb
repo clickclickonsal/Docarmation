@@ -5,8 +5,13 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-
-Vehicle.create ([
-	{ vehicle_make: , vehicle_model: , vehicle_model_year: , vehicle_trim: , vehicle_style: }
-
-	])
+MaintenanceType.destroy_all
+MaintenanceType.create [
+{name: "Oil Change"},
+{name: "Tire Rotation"},
+{name: "Vehicle Alignment"},
+{name: "Transmission Flush"},
+{name: "Brake Flush"},
+{name: "Coolant Flush"},
+{name: "Tire Balance"}
+]

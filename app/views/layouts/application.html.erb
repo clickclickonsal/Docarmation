@@ -12,10 +12,10 @@
 
 </head>
 <body>
-<hgroup>        
-  <h1 class="site-name">Docarmation</h1>
-  <h3 class="slogan">Vehicles have needs too...</h3>
-</hgroup>
+  <hgroup>        
+    <h1 class="site-name">Docarmation</h1>
+    <h3 class="slogan">Vehicles have needs too...</h3>
+  </hgroup>
 <div class="menu">
    <ul>
       <li><%= link_to "Home", homes_path %></li>
@@ -25,6 +25,7 @@
             <li><%= link_to "View My Vehicles", vehicles_path %></li>
          </ul>
       </li>
+      <li><%= link_to "VIN Decoder", vin_decoders_new_path %></li>
       <li><%= link_to "Account" %>
          <ul>
             <li><%= link_to "Sign Up", new_user_registration_path %></li>
@@ -34,24 +35,7 @@
       </li>
    </ul>
 </div>
-<!-- <nav class="main-menu">
-  <ul class="sub-menu">
-    <li><a href="#">Home</a></li> -->
-    <!-- li><a href="#">My Car</a>
-    </li>
-    <li><a href="#">Decode My VIN</a>
-    </li>
-    <li><a href="#">Recalls for my Vehicle</a>
-    </li> -->
-    <!-- <li><a href="#">Account</a> -->
-      <!-- <ul>
-       	<li><a href="#">Sign Up</a></li>
-        <li><a href="#">Log In</a></li>
-        <li><a href="#">Log Out</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>   -->  
+
 <%= yield %>
 
 </body>

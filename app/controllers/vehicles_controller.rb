@@ -11,9 +11,13 @@ class VehiclesController < ApplicationController
 
   def new
   	@vehicle = Vehicle.new
+    @makes = Vehicle.makes
+    @years = Vehicle.years
   end
 
   def create
+    @makes = Vehicle.makes
+    @years = Vehicle.years
   	@vehicle = Vehicle.new(vehicle_params)
   	if @vehicle.save
   		redirect_to @vehicle

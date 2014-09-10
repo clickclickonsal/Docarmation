@@ -16,11 +16,13 @@
 .site-name {
 	text-align: center;
 	font-size: 60px;
-	margin-top: 50px
+	margin-top: 50px;
+	font-family: Rockwell Extra Bold;
 }
 .slogan {
 	text-align: center;
-	margin-top: -50px
+	margin-top: -50px;
+	font-family: Rockwell Extra Bold;
 }
 
 .sub-menu li {
@@ -35,7 +37,7 @@ padding:0px;
 font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
 font-size:25px;
 font-weight:bold;
-width: 60%;
+width: 100%;
 margin: auto;
 }
 .menu ul{
@@ -57,14 +59,15 @@ padding:0px 0px 0px 15px;
 }
 .menu li a{
 color:#000;
+font-family: Rockwell Extra Bold;
+
 display:block;
 font-weight:normal;
 line-height:50px;
-margin:0px;
-padding:0px 25px;
+margin-left: 100px;
+padding:0px 35px;
 text-align:center;
 text-decoration:none;
-text-align: center;
 }
 .menu li a:hover{
 background:#C60;
@@ -83,7 +86,7 @@ text-decoration:none;
 display:none;
 height:auto;
 padding:0px;
-margin:0px;
+margin-left:100px;
 border:0px;
 position:absolute;
 width:200px;
@@ -129,7 +132,9 @@ span img {
   margin-right: auto;
 }
 
-
+ a {
+	text-decoration: none;
+}
 
 
 

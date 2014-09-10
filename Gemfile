@@ -1,6 +1,10 @@
 source 'https://rubygems.org'
 
-
+gem "figaro"
+#be able to render css on heroku deploy
+gem 'rails_12factor'
+#able to acces apis thru json format
+gem "httparty"
 # installed for creating user accounts
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

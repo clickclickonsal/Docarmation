@@ -1,0 +1,14 @@
+<ul>
+	<li>VIN: <%= @vin_info['vin']%> </li>
+	<li>Year: <%= @vin_info['years'][0]['year'] %></li>
+	<li>Make: <%= @vin_info['make']['name'] %></li>
+	<li>Model: <%= @vin_info['model']['name'] %></li>
+	<li>Vehicle Style: <%= @vin_info['categories']['vehicleStyle'] %> </li>
+	<li>Body Type: <%= @vin_info['categories']['primaryBodyType'] %></li>
+	<li>EPA Class: <%= @vin_info['categories']['EPAClass'] %></li>
+	<li>Driven Wheels: <%= @vin_info['drivenWheels'] %></li>
+	<li>Number Of Doors: <%= @vin_info['numOfDoors'] %></li>
+	<li>True Market Value: $<%= @vin_info['price']['usedTmvRetail']%></li>
+	<li>Used Private Party Value: $<%= @vin_info['price']['usedPrivateParty'] %> </li>
+	<li>Used Trade-In Value: $<%= @vin_info['price']['usedTradeIn'] %> </li>
+</ul>

@@ -11,29 +11,24 @@
     </div>
   <% end %>
 
-  <% m_types = ["Oil Change", "Tire Rotaton", "Vehicle Alignment", "Transmission Flush", "Coolant Flush", "Brake Flush", "Tire(s) Replacement", "Tire Balance"] %>
-  <select>
-    <% m_types.each do |type| %>
-      <option> <%= type %> </option>
-    <% end %>
-  </select>
-
-
-  
   <div class="field">
-    <%= f.label :mileage %><br>
-    <%= f.text_field :mileage %>
+    <%= f.label :maintenance_type_id %>
+    <%= collection_select(:maintenance, :maintenance_type_id, MaintenanceType.all, :id, :name) %>
   </div>
   <div class="field">
-    <%= f.label :shop_name %><br>
+    <%= f.label :mileage %>
+    <%= f.text_field :mileage  %>
+  </div>
+  <div class="field">
+    <%= f.label :shop_name %>
     <%= f.text_field :shop_name %>
   </div>
   <div class="field">
-    <%= f.label :date %><br>
+    <%= f.label :date %>
     <%= f.date_select :date %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Create Maintenance Record" %>
   </div>
 <% end %>
 

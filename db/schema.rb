@@ -11,19 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140909125150) do
+ActiveRecord::Schema.define(version: 20140910140230) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "maintenance_types", force: true do |t|
+    t.string "name"
+  end
+
   create_table "maintenances", force: true do |t|
-    t.string   "maintenance_type"
     t.integer  "mileage"
     t.string   "shop_name"
     t.datetime "date"
+    t.integer  "maintenance_type_id"
     t.integer  "vehicle_id"
   end
 
+  add_index "maintenances", ["maintenance_type_id"], name: "index_maintenances_on_maintenance_type_id", using: :btree
   add_index "maintenances", ["vehicle_id"], name: "index_maintenances_on_vehicle_id", using: :btree
 
   create_table "users", force: true do |t|
@@ -50,6 +55,10 @@ ActiveRecord::Schema.define(version: 20140909125150) do
     t.integer "vehicle_model_year"
     t.string  "vehicle_trim"
     t.string  "vehicle_style"
+  end
+
+  create_table "vin_decoders", force: true do |t|
+    t.string "vin"
   end
 
 end

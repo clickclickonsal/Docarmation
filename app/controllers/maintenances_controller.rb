@@ -29,7 +29,7 @@ class MaintenancesController < ApplicationController
 
   private
   def maint_params
-    params.require(:maintenance).permit(:maintenance_type, :mileage, :shop_name, :date)
+    params.require(:maintenance).permit(:maintenance_type_id, :mileage, :shop_name, :date)
   end
 
 end
