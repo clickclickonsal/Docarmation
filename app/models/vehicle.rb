@@ -9,7 +9,7 @@ class Vehicle < ActiveRecord::Base
 	
 
 	def self.makes 
-		raw_make = HTTParty.get("https://api.edmunds.com/api/vehicle/v2/makes?fmt=json&api_key=#{Rails.application.secrets.edmunds_api_key}") 
+		raw_make = HTTParty.get("https://api.edmunds.com/api/vehicle/v2/makes?fmt=json&api_key=ggcncvxvnkej7ff8kk6mpr8k") 
 	  raw_make['makes'].map {|make| p make['name']}
 	end
 

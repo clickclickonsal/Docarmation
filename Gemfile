@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem "figaro"
+
 #be able to render css on heroku deploy
 gem 'rails_12factor'
 #able to acces apis thru json format
