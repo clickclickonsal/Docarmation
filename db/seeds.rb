@@ -13,5 +13,12 @@ MaintenanceType.create [
 {name: "Transmission Flush"},
 {name: "Brake Flush"},
 {name: "Coolant Flush"},
-{name: "Tire Balance"}
+{name: "Tire Balance"},
+{name: "Spark Plugs Replacement"},
+{name: "Air Filter Replacement"},
+{name: "Cabin Air Filter Replacement"},
+{name: "Timing Belt Replacement"},
+{name: "Front Brakes Replacement"},
+{name: "Rear Brakes Replacement"},
+{name: "Tire(s) Replacement"}
 ]
