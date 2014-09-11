@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+ruby '2.0.0'
 #be able to render css on heroku deploy
 gem 'rails_12factor'
 #able to acces apis thru json format
