@@ -13,10 +13,10 @@
 
 ### Technologies Used
 
-Ruby 2.1.2
-Ruby on Rails 4.1.5
-PostgreSQL Database
-Authentication & Authorization using devise gem
+* Ruby 2.1.2
+* Ruby on Rails 4.1.5
+* PostgreSQL Database
+* Authentication & Authorization using devise gem
 
 ### User Stories Completed
 * As a user I can sign up for an account on the site
