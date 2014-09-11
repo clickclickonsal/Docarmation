@@ -13,29 +13,29 @@
 
 
   <div class="field">
-    <%= f.label :vehicle_make %>
+    <%= f.label :vehicle_make, "Make" %>
     <select name="vehicle[vehicle_make]">
       <% makes_array = @makes.each { |make| make } %>
       <%= options_for_select(makes_array) %>
     </select>
   </div>
   <div class="field">
-    <%= f.label :vehicle_model_year %>
+    <%= f.label :vehicle_model_year, "Year" %>
     <select name="vehicle[vehicle_model_year]">
       <% years_array = @years.each { |year| year } %>
       <%= options_for_select(years_array) %>
     </select>
   </div>
   <div class="field">
-    <%= f.label :vehicle_model%><br>
+    <%= f.label :vehicle_model, "Model" %><br>
     <%= f.text_field :vehicle_model %>
   </div>
   <div class="field">
-    <%= f.label :vehicle_trim%><br>
+    <%= f.label :vehicle_trim, "Trim ex.(SE, EX, LX, GDI, GT, Limited, S, TDI, etc)"%><br>
     <%= f.text_field :vehicle_trim %>
   </div>
   <div class="field">
-    <%= f.label :vehicle_style%><br>
+    <%= f.label :vehicle_style, "Engine Size"%><br>
     <%= f.text_field :vehicle_style %>
   </div>
     <%= f.submit %>
