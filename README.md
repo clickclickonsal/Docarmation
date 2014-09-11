@@ -25,7 +25,7 @@ Authentication & Authorization using devise gem
 * As a user I can Input my 17 character VIN in a VIN decoder
 
 ###ERD
-http://www.gliffy.com/go/publish/image/6154187/L.png
+![](http://www.gliffy.com/go/publish/image/6154187/L.png)
 
 ---
 Written By: Salvador Hernandez
