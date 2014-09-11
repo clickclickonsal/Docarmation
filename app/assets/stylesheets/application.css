@@ -160,6 +160,10 @@ span img {
 .delete_link a {
 	color: red;
 }
+.delete_link a:hover {
+	color: orange;
+	font-family: Rockwell Extra Bold;
+}
 .back_link {
 	font-size: 20px;
 	font-weight: bold;
@@ -184,7 +188,7 @@ html,
 body {
    margin:0;
    padding:0;
-   height:100%;
+   height:50%;
 }
 #container {
    min-height:100%;
@@ -200,14 +204,73 @@ body {
 }
 #footer {
    position:absolute;
-   bottom:0;
+   bottom:-400px;
    width:100%;
-   height:60px;   /* Height of the footer */
+   height:0px;   /* Height of the footer */
    background:#ffffff;
+   font-family: arial black;
 }
 
+.field {
+	color: blue;
+	font-weight: bold;
+	font-size: 15px;
+	text-align: center;
+	font-size: 25px;
+	margin-top: 15px;
+}
+.field input{
+	font-size: 20px
+}
+#maintenance_maintenance_type_id {
+	font-size: 40px
+}
+h1 {
+	text-align: center;
+	font-family: Rockwell Extra Bold;
+}
+.maintenance {
+	text-align: center;
+}
+.maintenance a {
+	color: blue;
+	font-size: 18px;
+}
+.maintenance a:hover {
+	background: black;
+	color: white;
+	font-size: 22px;
+}
 
+h4 {
+	text-align: center;
+	font-size: 40px;
+	font-family: Rockwell Extra Bold;
+}
 
+.credits {
+	text-align: center;
+	list-style: none;
+	font-family: Rockwell Extra Bold;
+	font-size: 25px
+}
 
+h2 {
+	font-family: Rockwell Extra Bold;
+	font-size: 35px
+}
+.future {
+	list-style: none;
+	font-family: Rockwell Extra Bold;
+}
 
+.future li {
+	margin-top: 10px;
+}
+#footer a {
+	color: blue;
+}
+#footer a:hover {
+	color: red
+}
 

@@ -3,6 +3,9 @@ class HomesController <  ApplicationController
 	def index
 	end
 
-	def show
+	def credit
+	end
+
+	def terms
 	end
 end

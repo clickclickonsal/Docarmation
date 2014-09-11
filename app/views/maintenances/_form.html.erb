@@ -12,22 +12,22 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :maintenance_type_id %>
+    <%= f.label :maintenance_type_id, "Maintenance Type" %>
     <%= collection_select(:maintenance, :maintenance_type_id, MaintenanceType.all, :id, :name) %>
   </div>
   <div class="field">
-    <%= f.label :mileage %>
+    <%= f.label :mileage, "Mileage"  %>
     <%= f.text_field :mileage  %>
   </div>
   <div class="field">
-    <%= f.label :shop_name %>
+    <%= f.label :shop_name, "Shop Name" %>
     <%= f.text_field :shop_name %>
   </div>
   <div class="field">
-    <%= f.label :date %>
+    <%= f.label :date, "Date"%>
     <%= f.date_select :date %>
   </div>
-  <div class="actions">
+  <div class="field">
     <%= f.submit "Create Maintenance Record" %>
   </div>
 <% end %>

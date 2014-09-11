@@ -4,7 +4,10 @@ Rails.application.routes.draw do
   get '/vin_decoders/new', to: "vin_decoders#new"
   get '/vin_decoders', to: "vin_decoders#search"
 
-  resources :homes, only: [:index, :show]
+
+  get '/homes/credit', to: "homes#credit"
+  get '/homes/terms', to: "homes#terms"
+  resources :homes, only: [:index]
   resources :vehicles do
     resources :maintenances, only: [:index, :new, :show, :create, :destroy]
   end
