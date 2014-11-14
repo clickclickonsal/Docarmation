@@ -1,7 +1,11 @@
 source 'https://rubygems.org'
 
 ruby '2.1.2'
-#be able to render css on heroku deploy
+# creates erd using active record models assocations
+gem "rails-erd"
+# Hides API Keys
+gem "figaro"
+# be able to render css on heroku deploy
 gem 'rails_12factor'
 #able to acces apis thru json format
 gem "httparty"
