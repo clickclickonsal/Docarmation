@@ -1,29 +1,28 @@
 class VehiclesController < ApplicationController
-	before_action :authenticate_user!
+  before_action :authenticate_user!
 
   def index
-  	@vehicles = Vehicle.all
+    @vehicles = Vehicle.where(user_id: current_user.id)
   end
 
   def show
-  	@vehicle = Vehicle.find( params[:id] )
+    @vehicle = Vehicle.find( params[:id] )
   end
 
   def new
-  	@vehicle = Vehicle.new
+    @vehicle = Vehicle.new
     @makes = Vehicle.makes
     @years = Vehicle.years
+    # @models = Vehicle.models
   end
 
   def create
-    @makes = Vehicle.makes
-    @years = Vehicle.years
-  	@vehicle = Vehicle.new(vehicle_params)
-  	if @vehicle.save
-  		redirect_to @vehicle
+    @vehicle = Vehicle.new(vehicle_params.merge(user_id: current_user.id))
+    if @vehicle.save
+      redirect_to @vehicle
     else
       render "new"
-  	end
+    end
   end
 
 
