@@ -38,12 +38,18 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.8.0)
+    crack (0.4.2)
+      safe_yaml (~> 1.0.0)
     devise (3.3.0)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 3.2.6, < 5)
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
+    edmunds_ruby (1.0.2)
+      crack
+      rails
+      rest-client
     erubis (2.7.0)
     execjs (2.2.1)
     figaro (1.0.0)
@@ -67,6 +73,7 @@ GEM
     minitest (5.4.1)
     multi_json (1.10.1)
     multi_xml (0.5.5)
+    netrc (0.7.7)
     orm_adapter (0.5.0)
     pg (0.17.1)
     polyglot (0.3.5)
@@ -101,7 +108,11 @@ GEM
     rake (10.3.2)
     rdoc (4.1.1)
       json (~> 1.4)
+    rest-client (1.7.2)
+      mime-types (>= 1.16, < 3.0)
+      netrc (~> 0.7)
     ruby-graphviz (1.0.9)
+    safe_yaml (1.0.3)
     sass (3.2.19)
     sass-rails (4.0.3)
       railties (>= 4.0.0, < 5.0)
@@ -143,6 +154,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
   devise
+  edmunds_ruby
   figaro
   httparty
   jbuilder (~> 2.0)

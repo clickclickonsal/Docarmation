@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 ruby '2.1.2'
+# edmunds gem
+gem 'edmunds_ruby'
 # creates erd using active record models assocations
 gem "rails-erd"
 # Hides API Keys

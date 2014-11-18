@@ -11,8 +11,8 @@ class VehiclesController < ApplicationController
 
   def new
     @vehicle = Vehicle.new
-    @makes = Vehicle.makes
-    @years = Vehicle.years
+    # @makes = Vehicle.makes
+    # @years = Vehicle.years
     # @models = Vehicle.models
   end
 

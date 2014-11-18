@@ -12,7 +12,7 @@ class VinDecoder
 	end
 	
 	def vin_decoder
-		vehicle = HTTParty.get("https://api.edmunds.com/api/vehicle/v2/vins/#{vin}?manufactureCode=3548&fmt=json&api_key=ggcncvxvnkej7ff8kk6mpr8k") 
+		vehicle = HTTParty.get("https://api.edmunds.com/api/vehicle/v2/vins/#{vin}?manufactureCode=3548&fmt=json&api_key=#{ENV['edmunds_api_key']}") 
 	end
 end
 
