@@ -2,10 +2,12 @@
 <html>
 <head>
   <title>Docarmation</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= include_gon %>
   <%= csrf_meta_tags %>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="jquery.chained.remote.min.js"></script>
 
    <p class="notice"><%= notice %></p>
    <p class="alert"><%= alert %></p>

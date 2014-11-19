@@ -11,9 +11,7 @@ class VehiclesController < ApplicationController
 
   def new
     @vehicle = Vehicle.new
-    # @makes = Vehicle.makes
-    # @years = Vehicle.years
-    # @models = Vehicle.models
+    gon.edmunds_key = ENV['edmunds_api_key']
   end
 
   def create
