@@ -1,4 +1,10 @@
 $main-font: Rockwell Extra Bold;
+@mixin transition-all {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
 
 body {
   height: 100%;
@@ -62,14 +68,17 @@ h2 {
 }
 
 .delete-link {
+  clear: both;
   float: right;
   margin-right: 4.5em;
 }
 
 .back-link {
+  clear: both;
   float: left;
   margin-left: 6em;
 }
+
 .vehicle-show {
   clear: both;
   font-size: 2em;
@@ -89,83 +98,23 @@ h2 {
   }
 }
 
-
-// .back_link {
-//   font-size: 20px;
-//   font-weight: bold;
-// }
-// .back_link a {
-//   color: blue;
-// }
-// .back_link a:hover {
-//   background: black;
-//   color: white;
-//   font-size: 22px;
-// }
-
-// .footer {
-//    position:absolute;
-//    bottom:0;
-//    width:100%;
-//    height:100;   /* Height of the footer */
-//    background: white;
-// }
-// html,
-// body {
-//    margin:0;
-//    padding:0;
-//    height:50%;
-// }
-// #container {
-//    min-height:100%;
-//    position:relative;
-// }
-// #header {
-//    background:#ffffff;
-//    padding:10px;
-// }
-// #body {
-//    padding:10px;
-//    padding-bottom:60px;   /* Height of the footer */
-// }
-// #footer {
-//    position:absolute;
-//    bottom:-400px;
-//    width:100%;
-//    height:0px;   /* Height of the footer */
-//    background:#ffffff;
-//    font-family: arial black;
-// }
-
-// h4 {
-//   text-align: center;
-//   font-size: 40px;
-//   font-family: Rockwell Extra Bold;
-// }
-
-// .credits {
-//   text-align: center;
-//   list-style: none;
-//   font-family: Rockwell Extra Bold;
-//   font-size: 25px
-// }
-
-// h2 {
-//   font-family: Rockwell Extra Bold;
-//   font-size: 35px
-// }
-// .future {
-//   list-style: none;
-//   font-family: Rockwell Extra Bold;
-// }
-
-// .future li {
-//   margin-top: 10px;
-// }
-// #footer a {
-//   color: blue;
-// }
-// #footer a:hover {
-//   color: red
-// }
-
+.maint-list {
+  font-weight: bold;
+  font-size: 1.2em;
+  ul {
+    list-style-type: none;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    a {
+      text-decoration: none;
+      color: red;
+      font-size: 1.5em;
+      @include transition-all;
+      &:hover {
+        background: black;
+        color: green;
+        @include transition-all;
+      }
+    }
+  }
+}

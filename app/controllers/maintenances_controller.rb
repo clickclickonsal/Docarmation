@@ -5,7 +5,7 @@ class MaintenancesController < ApplicationController
   end
 
   def create
-    @maint = Maintenance.new(maint_params.merge(vehicle_id: :params[:vehicle_id]))
+    @maint = Maintenance.new(maint_params.merge(vehicle_id: params[:vehicle_id]))
     @vehicle = Vehicle.find( params[:vehicle_id])
     if @maint.save
       redirect_to vehicle_path(@vehicle)

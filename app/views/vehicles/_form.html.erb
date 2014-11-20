@@ -12,7 +12,7 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :vehicle_make, "Make" %>
+    <%= f.label :vehicle_make, "Make" %><br />
     <select id="make">
       <% make = Edmunds::Make.new.find_new_and_used %>
       <% makes_array = make.map {|make| make['name'] } %>
@@ -20,7 +20,7 @@
     </select>
   </div>
   <div class="field">
-    <%= f.label :vehicle_model_year, "Year" %>
+    <%= f.label :vehicle_model_year, "Year" %><br />
     <select id='year'>
       <% year = Edmunds::ModelYear.new.find_distinct_year_with_new_or_used %>
       <%= options_for_select(year) %>
@@ -37,11 +37,11 @@
     </select>
   </div>
   <div class="field">
-    <%= f.label :vehicle_style, "Engine Size"%><br>
+    <%= f.label :vehicle_style, "Engine"%><br>
     <select id="engine-size">
     </select>
   </div>
-  <div class="field">
+  <div class="submit-field">
     <%= f.submit %>
   </div>
 <% end %>

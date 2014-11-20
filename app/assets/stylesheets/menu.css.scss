@@ -2,7 +2,7 @@ $main-font: Rockwell Extra Bold;
 @mixin linear-gradient($direction, $f-color, $f-percent, $s-color, $s-percent) {
   background: -webkit-linear-gradient($direction, $f-color $f-percent, $s-color $s-percent); 
     background: -moz-linear-gradient($direction, $f-color $f-percent, $s-color $s-percent);  
-      background: -ms-linear-gradient($direction, $f-color $f-percent, $s-color $s-percent);
+      background: -o-linear-gradient($direction, $f-color $f-percent, $s-color $s-percent);
         background: linear-gradient($direction, $f-color $f-percent, $s-color $s-percent);  
 }
 
@@ -72,6 +72,7 @@ $main-font: Rockwell Extra Bold;
         padding: 1.56em 2.45em;
         color: #195; 
         text-decoration: none;
+        font-weight: bold;
       }
     }
   }

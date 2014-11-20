@@ -22,16 +22,20 @@
 		</button>
 </ul>
 
-<div class="mait-list">
-	<ul>
-		<% @vehicle.maintenances.each do |maint| %>
+<div class="maint-list">
+	<% @vehicle.maintenances.each do |maint| %>
+		<ul>
 			<li>Maintenance Category: <%= maint.maintenance_type.name %></li>
 			<li>Date Performed: <%= maint.date.to_time.strftime('%B %e, %Y') %></li>
 			<li>Shop: <%= maint.shop_name %></li>
 			<li>Mileage: <%= maint.mileage %></li>
-			<li><%= link_to "Delete Record", vehicle_maintenance_path(@vehicle, maint), method: :delete %></li>
-		<% end %>
-	</ul>
+			<li>
+				<button>
+					<%= link_to "Delete Record", vehicle_maintenance_path(@vehicle, maint), method: :delete %>
+				</button>
+			</li>
+		</ul>
+	<% end %>
 </div>
 
 
