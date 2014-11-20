@@ -1,25 +1,38 @@
-<div class="delete_link"><%= link_to "Delete Vehicle", @vehicle, method: :delete %></div>
-<div class="back_link"><%= link_to 'Back', vehicles_path %></div>
+<div class="delete-link">
+	<button>
+		<%= link_to "Delete Vehicle", @vehicle, method: :delete %>
+	</button>
+</div>
+<div class="back-link">
+	<button>
+		<%= link_to 'Back', vehicles_path %>
+	</button>
+</div>
 
-<ul class="vehicle">
-	<li><%= @vehicle.vehicle_make %>
-	<%= @vehicle.vehicle_model %>
-	<%= @vehicle.vehicle_model_year %>
-	<%= @vehicle.vehicle_trim %>
-	<%= @vehicle.vehicle_style %></li>
-	<%= link_to "Add Maintenance Record", new_vehicle_maintenance_path(@vehicle, @maint) %>
+<ul class="vehicle-show">
+	<li>
+		<%= @vehicle.vehicle_make %>
+		<%= @vehicle.vehicle_model %>
+		<%= @vehicle.vehicle_model_year %>
+		<%= @vehicle.vehicle_trim %>
+		<%= @vehicle.vehicle_style %>
+	</li>
+		<button>
+			<%= link_to "Add Maintenance Record", new_vehicle_maintenance_path(@vehicle, @maint) %>
+		</button>
 </ul>
 
-<ul>
-<% @vehicle.maintenances.each do |maint| %>
-	<li>Maintenance Category: <%= maint.maintenance_type.name %></li>
-	<li>Date Performed: <%= maint.date.to_time.strftime('%B %e, %Y') %></li>
-	<li>Shop: <%= maint.shop_name %></li>
-	<li>Mileage: <%= maint.mileage %></li>
-	<li><%= link_to "Delete Record", vehicle_maintenance_path(@vehicle, maint), method: :delete %></li>
-<% end %>
-</ul>
-
+<div class="mait-list">
+	<ul>
+		<% @vehicle.maintenances.each do |maint| %>
+			<li>Maintenance Category: <%= maint.maintenance_type.name %></li>
+			<li>Date Performed: <%= maint.date.to_time.strftime('%B %e, %Y') %></li>
+			<li>Shop: <%= maint.shop_name %></li>
+			<li>Mileage: <%= maint.mileage %></li>
+			<li><%= link_to "Delete Record", vehicle_maintenance_path(@vehicle, maint), method: :delete %></li>
+		<% end %>
+	</ul>
+</div>
 
 
 

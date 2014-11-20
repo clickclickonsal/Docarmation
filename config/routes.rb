@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get '/homes/terms', to: "homes#terms"
   resources :homes, only: [:index]
   resources :vehicles do
-    resources :maintenances, only: [:index, :new, :show, :create, :destroy]
+    resources :maintenances, only: [:new, :create, :destroy]
   end
   
   root to: "vehicles#index"

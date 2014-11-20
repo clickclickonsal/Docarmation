@@ -1,15 +1,7 @@
 class MaintenancesController < ApplicationController
 
-  def index
-    @maints = Maintenance.all
-  end
-
   def new
     @maint = Maintenance.new
-  end
-
-  def show
-    @maint = Maintenance.find ( params[:id])
   end
 
   def create
