@@ -1,230 +1,137 @@
-.site-name {
-  text-align: center;
-  font-size: 60px;
-  margin-top: 50px;
-  font-family: Rockwell Extra Bold;
-}
-.slogan {
-  text-align: center;
-  margin-top: -50px;
-  font-family: Rockwell Extra Bold;
-}
+$main-font: Rockwell Extra Bold;
 
-.sub-menu li {
-  display: inline;
-}
-
-.menu{
-border:none;
-border:0px;
-margin:0px;
-padding:0px;
-font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
-font-size:25px;
-font-weight:bold;
-width: 100%;
-margin: auto;
-}
-.menu ul{
-background:#295;
-height:50px;
-list-style:none;
-margin:0px;
-padding:0px;
-/*-webkit-border-radius: 15px;*/
-/*-moz-border-radius: 15px;*/
-/*border-radius: 15px;*/
--webkit-box-shadow: inset 0px 16px 0px 0px rgba(255, 255, 255, .1);
--moz-box-shadow: inset 0px 16px 0px 0px rgba(255, 255, 255, .1);
-box-shadow: inset 0px 16px 0px 0px rgba(255, 255, 255, .1);
-}
-.menu li{
-float:left;
-padding:0px 0px 0px 15px; 
-}
-.menu li a{
-color:#000;
-font-family: Rockwell Extra Bold;
-
-display:block;
-font-weight:normal;
-line-height:50px;
-margin-left: 100px;
-padding:0px 35px;
-text-align:center;
-text-decoration:none;
-}
-.menu li a:hover{
-background:#C60;
-color:#FFFFFF;
-text-decoration:none;
--webkit-box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, .3);
--moz-box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, .3);
-box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, .3);
-}
-.menu ul li:hover a{
-background:#C60;
-color:#FFFFFF;
-text-decoration:none;
-}
-.menu li ul{
-display:none;
-height:auto;
-padding:0px;
-margin-left:100px;
-border:0px;
-position:absolute;
-width:200px;
-z-index:200;
-}
-.menu li:hover ul{
-display:block; 
-}
-.menu li li {
-display:block;
-float:none;
-margin:0px;
-padding:0px;
-width:200px;
-background:#F93;
-/*this is where the rounded corners for the dropdown disappears*/
-}
-.menu li:hover li a{
-background:none;
-}
-.menu li ul a{
-display:block;
-height:50px;
-font-size:12px;
-font-style:normal;
-margin:0px;
-padding:0px 10px 0px 15px;
-text-align:left;
-}
-.menu li ul a:hover, .menu li ul li:hover a{
-border:0px;
-color:#ffffff;
-text-decoration:none;
-background:#290;
--webkit-box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, .3);
--moz-box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, .3);
-box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, .3); 
-}
-
-span img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
- a {
-  text-decoration: none;
-}
-
-.vehicle {
-  font-size: 20px;
-  font-weight: bold;
-  list-style: none;
-  margin-top: 10px
-}
-.vehicle a {
-  color: blue;
-  font-size: 15px
-}
-
-.vehicle a:hover {
-  font-size: 20px;
-  color: red
-}
-
-.delete_link {
-  text-align: right;
-  font-size: 20px;
-  font-weight: bold;
-}
-.delete_link a {
-  color: red;
-}
-.delete_link a:hover {
-  color: orange;
-  font-family: Rockwell Extra Bold;
-}
-.back_link {
-  font-size: 20px;
-  font-weight: bold;
-}
-.back_link a {
-  color: blue;
-}
-.back_link a:hover {
-  background: black;
-  color: white;
-  font-size: 22px;
-}
-
-.footer {
-   position:absolute;
-   bottom:0;
-   width:100%;
-   height:100;   /* Height of the footer */
-   background: white;
-}
-html,
 body {
-   margin:0;
-   padding:0;
-   height:50%;
-}
-#container {
-   min-height:100%;
-   position:relative;
-}
-#header {
-   background:#ffffff;
-   padding:10px;
-}
-#body {
-   padding:10px;
-   padding-bottom:60px;   /* Height of the footer */
-}
-#footer {
-   position:absolute;
-   bottom:-400px;
-   width:100%;
-   height:0px;   /* Height of the footer */
-   background:#ffffff;
-   font-family: arial black;
+  height: 100%;
+  width: 100%;
 }
 
-h4 {
+h1, h2 {
+  font-size: 3em;
   text-align: center;
-  font-size: 40px;
-  font-family: Rockwell Extra Bold;
-}
-
-.credits {
-  text-align: center;
-  list-style: none;
-  font-family: Rockwell Extra Bold;
-  font-size: 25px
+  font-family: $main-font;
+  font-size: 3em;
+  font-weight: bold;
+  width: 50%;
+  margin: auto;
 }
 
 h2 {
-  font-family: Rockwell Extra Bold;
-  font-size: 35px
-}
-.future {
-  list-style: none;
-  font-family: Rockwell Extra Bold;
+  font-size: 1.3em;
 }
 
-.future li {
-  margin-top: 10px;
+#home-image img {
+  display: block;
+  margin: auto;
 }
-#footer a {
-  color: blue;
-}
-#footer a:hover {
-  color: red
-}
+
+//  a {
+//   text-decoration: none;
+// }
+
+// .vehicle {
+//   font-size: 20px;
+//   font-weight: bold;
+//   list-style: none;
+//   margin-top: 10px
+// }
+// .vehicle a {
+//   color: blue;
+//   font-size: 15px
+// }
+
+// .vehicle a:hover {
+//   font-size: 20px;
+//   color: red
+// }
+
+// .delete_link {
+//   text-align: right;
+//   font-size: 20px;
+//   font-weight: bold;
+// }
+// .delete_link a {
+//   color: red;
+// }
+// .delete_link a:hover {
+//   color: orange;
+//   font-family: Rockwell Extra Bold;
+// }
+// .back_link {
+//   font-size: 20px;
+//   font-weight: bold;
+// }
+// .back_link a {
+//   color: blue;
+// }
+// .back_link a:hover {
+//   background: black;
+//   color: white;
+//   font-size: 22px;
+// }
+
+// .footer {
+//    position:absolute;
+//    bottom:0;
+//    width:100%;
+//    height:100;   /* Height of the footer */
+//    background: white;
+// }
+// html,
+// body {
+//    margin:0;
+//    padding:0;
+//    height:50%;
+// }
+// #container {
+//    min-height:100%;
+//    position:relative;
+// }
+// #header {
+//    background:#ffffff;
+//    padding:10px;
+// }
+// #body {
+//    padding:10px;
+//    padding-bottom:60px;   /* Height of the footer */
+// }
+// #footer {
+//    position:absolute;
+//    bottom:-400px;
+//    width:100%;
+//    height:0px;   /* Height of the footer */
+//    background:#ffffff;
+//    font-family: arial black;
+// }
+
+// h4 {
+//   text-align: center;
+//   font-size: 40px;
+//   font-family: Rockwell Extra Bold;
+// }
+
+// .credits {
+//   text-align: center;
+//   list-style: none;
+//   font-family: Rockwell Extra Bold;
+//   font-size: 25px
+// }
+
+// h2 {
+//   font-family: Rockwell Extra Bold;
+//   font-size: 35px
+// }
+// .future {
+//   list-style: none;
+//   font-family: Rockwell Extra Bold;
+// }
+
+// .future li {
+//   margin-top: 10px;
+// }
+// #footer a {
+//   color: blue;
+// }
+// #footer a:hover {
+//   color: red
+// }
 
