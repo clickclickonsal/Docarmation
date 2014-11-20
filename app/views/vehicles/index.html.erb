@@ -1,10 +1,10 @@
-<ul>
-<% @vehicles.each do |vehicle| %>
-	<li class="vehicle"> <%= link_to "View", vehicle_path(vehicle) %>
-		<%= vehicle.vehicle_make %>
-		<%= vehicle.vehicle_model %>
-		<%= vehicle.vehicle_model_year %>
-	</li>
-<% end %>
+<ul class="list-vehicle">
+  <% @vehicles.each do |vehicle| %>
+  	<li> 
+      <button>
+        <%= link_to "#{vehicle.vehicle_model_year}" + " #{vehicle.vehicle_make}" + " #{vehicle.vehicle_model}", vehicle_path(vehicle) %>
+      </button>
+  	</li>
+  <% end %>
 </ul>
 

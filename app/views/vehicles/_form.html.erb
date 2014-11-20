@@ -4,43 +4,47 @@
       <h2><%= pluralize(@vehicle.errors.count, "error") %> prohibited this vehicle from being saved:</h2>
 
       <ul>
-      <% @vehicle.errors.full_messages.each do |message| %>
+        <% @vehicle.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>
     </div>
   <% end %>
 
-
   <div class="field">
-    <%= f.label :vehicle_make, "Make" %>
-    <select name="vehicle[vehicle_make]">
-      <% makes_array = @makes.each { |make| make } %>
+    <%= f.label :vehicle_make, "Make" %><br />
+    <select id="make">
+      <% make = Edmunds::Make.new.find_new_and_used %>
+      <% makes_array = make.map {|make| make['name'] } %>
       <%= options_for_select(makes_array) %>
     </select>
   </div>
   <div class="field">
-    <%= f.label :vehicle_model_year, "Year" %>
-    <select name="vehicle[vehicle_model_year]">
-      <% years_array = @years.each { |year| year } %>
-      <%= options_for_select(years_array) %>
+    <%= f.label :vehicle_model_year, "Year" %><br />
+    <select id='year'>
+      <% year = Edmunds::ModelYear.new.find_distinct_year_with_new_or_used %>
+      <%= options_for_select(year) %>
     </select>
   </div>
   <div class="field">
     <%= f.label :vehicle_model, "Model" %><br>
-    <%= f.text_field :vehicle_model %>
+    <select id='model'>
+    </select>
   </div>
   <div class="field">
-    <%= f.label :vehicle_trim, "Trim ex.(SE, EX, LX, GDI, GT, Limited, S, TDI, etc)"%><br>
-    <%= f.text_field :vehicle_trim %>
+    <%= f.label :vehicle_trim, "Trim"%><br>
+    <select id="trim">
+    </select>
   </div>
   <div class="field">
-    <%= f.label :vehicle_style, "Engine Size"%><br>
-    <%= f.text_field :vehicle_style %>
+    <%= f.label :vehicle_style, "Engine"%><br>
+    <select id="engine-size">
+    </select>
   </div>
-  <div class="field">
+  <div class="submit-field">
     <%= f.submit %>
   </div>
 <% end %>
+
 
 

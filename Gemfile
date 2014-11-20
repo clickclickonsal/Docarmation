@@ -1,7 +1,15 @@
 source 'https://rubygems.org'
 
 ruby '2.1.2'
-#be able to render css on heroku deploy
+# Pass Ruby code to Javascript :)
+gem 'gon'
+# edmunds gem
+gem 'edmunds_ruby'
+# creates erd using active record models assocations
+gem "rails-erd"
+# Hides API Keys
+gem "figaro"
+# be able to render css on heroku deploy
 gem 'rails_12factor'
 #able to acces apis thru json format
 gem "httparty"
@@ -22,8 +30,6 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.

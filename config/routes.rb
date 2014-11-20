@@ -3,16 +3,13 @@ Rails.application.routes.draw do
   
   get '/vin_decoders/new', to: "vin_decoders#new"
   get '/vin_decoders', to: "vin_decoders#search"
+  get "/vin_decoders/index", to: "vin_decoders#home"
 
-
-  get '/homes/credit', to: "homes#credit"
-  get '/homes/terms', to: "homes#terms"
-  resources :homes, only: [:index]
   resources :vehicles do
-    resources :maintenances, only: [:index, :new, :show, :create, :destroy]
+    resources :maintenances, only: [:new, :create, :destroy]
   end
   
-  root to: "vehicles#index"
+  root to: "vin_decoders#home"
 
 
   # The priority is based upon order of creation: first created -> highest priority.

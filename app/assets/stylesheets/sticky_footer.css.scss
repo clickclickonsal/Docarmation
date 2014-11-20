@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+}
+html {
+  height: 100%;
+}
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -1.5em; 
+
+  &:after {
+    content: "";
+    display: block;
+    height: 1.5em
+  }
+}
+
+.site-footer {
+  height: 1.5em;
+  font-weight: bold;
+  a {
+    text-decoration: none;
+    color: #195;
+    &:hover {
+      background: black;
+    }
+  }
+}

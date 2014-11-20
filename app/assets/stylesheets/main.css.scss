@@ -1,0 +1,120 @@
+$main-font: Rockwell Extra Bold;
+@mixin transition-all {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+h1, h2 {
+  font-size: 3em;
+  text-align: center;
+  font-family: $main-font;
+  font-size: 3em;
+  font-weight: bold;
+  width: 50%;
+  margin: auto;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+#home-image img {
+  display: block;
+  margin: auto;
+}
+
+.list-vehicle {
+  list-style-type: none;
+  text-align: center;
+  width: 50%;
+  margin: 1em auto;
+  font-size: 1.6em;
+  font-weight: bold;
+
+  li {
+    margin-top: 0.4em;
+  }
+
+  button {
+    font-size: 1em;
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: blue;
+  }
+}
+
+.delete-link, .back-link {
+  font-size: 1.5em;
+  font-weight: bold;
+  a {
+    text-decoration: none;
+    font-size: 1.4em;
+    color: red;
+    &:hover {
+      color: green;
+      font-weight: bold;
+    }
+  }
+}
+
+.delete-link {
+  clear: both;
+  float: right;
+  margin-right: 4.5em;
+}
+
+.back-link {
+  clear: both;
+  float: left;
+  margin-left: 6em;
+}
+
+.vehicle-show {
+  clear: both;
+  font-size: 2em;
+  font-weight: bold;
+  list-style: none;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  font-family: $main-font;
+  a {
+    text-decoration: none;
+    font-size: 2em;
+    &:hover {
+      font-size: 20px;
+      color: red
+    }
+  }
+}
+
+.maint-list {
+  font-weight: bold;
+  font-size: 1.2em;
+  ul {
+    list-style-type: none;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    a {
+      text-decoration: none;
+      color: red;
+      font-size: 1.5em;
+      @include transition-all;
+      &:hover {
+        background: black;
+        color: green;
+        @include transition-all;
+      }
+    }
+  }
+}

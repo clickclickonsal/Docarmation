@@ -1,22 +1,24 @@
-<% if @vin.errors.any? %>
-  <div id="error_explanation">
-    <h2><%= pluralize(@vin.errors.count, "error") %> Prohibited this VIN from being Looked Up:</h2>
+<div class="vin-container">
+  <% if @vin.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@vin.errors.count, "error") %> Prohibited this VIN from being Looked Up:</h2>
 
-    <ul>
-    <% @vin.errors.full_messages.each do |message| %>
-      <li><%= message %></li>
-    <% end %>
-    </ul>
-  </div>
-<% end %>
+      <ul>
+        <% @vin.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
 
-<%= form_tag "/vin_decoders", method: :get do -%>
-  
-  <div class="field">
-    <%= label_tag "Input 17 Character VIN" %><br>
-    <%= text_field_tag :vin %>
-  </div>
-  <div class ="field">
-    <%= submit_tag "Decode VIN" %>
-  </div>
-<% end %>
+  <%= form_tag "/vin_decoders", method: :get do -%>
+    
+    <div class="field">
+      <%= label_tag "Input 17 Character VIN" %><br>
+      <%= text_field_tag :vin %>
+    </div>
+    <div class ="field">
+      <%= submit_tag "Decode VIN" %>
+    </div>
+  <% end %>
+</div>
