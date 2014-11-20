@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141027142235) do
+ActiveRecord::Schema.define(version: 20141120141845) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -57,8 +57,6 @@ ActiveRecord::Schema.define(version: 20141027142235) do
     t.string  "vehicle_style"
     t.integer "user_id"
   end
-
-  add_index "vehicles", ["user_id"], name: "index_vehicles_on_user_id", using: :btree
 
   create_table "vin_decoders", force: true do |t|
     t.string "vin"
