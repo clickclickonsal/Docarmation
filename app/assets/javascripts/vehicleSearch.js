@@ -69,19 +69,19 @@ $(document).ready(function() {
   function getTrimData() {
     $.ajax({
       url: "https://api.edmunds.com/api/vehicle/v2/"+makeSelect+"/"+modelSelect+"/"+yearSelect+"?fmt=json&api_key="+gon.edmunds_key,
-        dataType: "json",
-        method: "GET",
-        success: function(data) {
-          var trimArray = [];
-          $("#vehicle_vehicle_trim").html("");
-          for(var i = 0; i < data.styles.length; i++) {
-            if( jQuery.inArray(data.styles[i].trim, trimArray) == -1 ) {
-              trimArray.push(data.styles[i].trim);
-              var joinedTrim = data.styles[i].trim.split(" ").join("");
-              $("#vehicle_vehicle_trim").append("<option id='"+joinedTrim+"' trim-id='"+data.styles[i].id+"'>"+data.styles[i].trim+"</option>");
-            }
+      dataType: "json",
+      method: "GET",
+      success: function(data) {
+        var trimArray = [];
+        $("#vehicle_vehicle_trim").html("");
+        for(var i = 0; i < data.styles.length; i++) {
+          if( jQuery.inArray(data.styles[i].trim, trimArray) == -1 ) {
+            trimArray.push(data.styles[i].trim);
+            var joinedTrim = data.styles[i].trim.split(" ").join("");
+            $("#vehicle_vehicle_trim").append("<option id='"+joinedTrim+"' trim-id='"+data.styles[i].id+"'>"+data.styles[i].trim+"</option>");
           }
         }
+      }
     });
   }
 
