@@ -5,7 +5,7 @@
 ### Overview
 **Docarmation** is a website to help vehicle owners keep track of their maintenance records for their vehicle. It will help the owner appreciate their vehicle a little more.
 
-[Visit Docarmation](http://quiet-stream-4980.herokuapp.com/)
+[Visit Docarmation](http://docarmation.herokuapp.com/)
 
 ### Local Set Up
 * rake db:create
