@@ -69,12 +69,30 @@
   }
 }
 
+@media (max-width: 600px)  {
+  .vin-decoded {
+    width: 90%;
+    font-size: 1.2em;
+    li {
+      width: 80%;
+      padding-top: 0.4em;
+      border-bottom: 0.1em solid grey;
+    }
+  }
+}
+
 @media (max-width: 500px) {
   .vehicle-show > li {
     font-size: 0.6em;
   }
   .vehicle-show > button > a {
     font-size: 1.5em;
+  }
+  .menu {
+    & > .menu-ul-js {
+      width: 45%;
+      height: 18em;
+    }
   }
 }
 
@@ -86,7 +104,7 @@
     }
     & > .menu-ul-js {
       width: 45%;
-      height: 17em;
+      height: 22em;
     }
     li {
       clear: both;
@@ -113,7 +131,7 @@
     }
     & > .menu-ul-js {
       width: 50%;
-      height: 17.5em;
+      height: 23em;
     }
   }
   #slogan {
@@ -121,5 +139,15 @@
     top: 3em;
     width: 69%;
     font-size: 1em;
+  }
+  .vin-container {
+    width: 90%;
+    font-size: 1em;
+  }
+  .vin-decoded {
+    margin-left: 0;
+    padding-left: 0.5em;
+    width: 100%;
+    font-size: 0.9em;
   }
 }

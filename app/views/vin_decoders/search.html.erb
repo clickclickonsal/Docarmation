@@ -11,4 +11,5 @@
 	<li><span>True Market Value:</span> $<%= @vin_info['price']['usedTmvRetail']%></li>
 	<li><span>Used Private Party Value:</span> $<%= @vin_info['price']['usedPrivateParty'] %> </li>
 	<li><span>Used Trade-In Value:</span> $<%= @vin_info['price']['usedTradeIn'] %> </li>
+	<button><%= link_to "Decode another VIN", vin_decoders_new_path %></button>
 </ul>
