@@ -1,75 +1,80 @@
-// .maintenance {
-//   width: 80%;
-//   margin: auto;
-//   margin-top: 1em;
-//   font-size: 1.6em;
+#maint-header {
+  padding: 0.2em;
+  font-size: 2em;
+}
+
+.maintenance {
+  width: 50%;
+  margin: auto;
+  margin-top: 1em;
+  font-size: 1.6em;
+  text-align: left;
   
-//   select, [type="submit"] {
-//     font-size: 2em;
-//   }
-// }
+  select, [type="submit"] {
+    font-size: 2em;
+  }
+}
 
-// .vin-container {
-//   width: 50%;
-//   margin: auto;
-//   text-align: center;
-//   font-size: 1.6em;
-//   color: blue;
-//   font-family:  Rockwell Extra Bold;
+.vin-container {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  font-size: 1.6em;
+  color: blue;
+  font-family:  Rockwell Extra Bold;
 
-//   input {
-//     font-size: 0.6em;
-//     width: 45%;
-//     text-align: center;
-//   }
+  input {
+    font-size: 0.6em;
+    width: 45%;
+    text-align: center;
+  }
 
-//   [type="submit"] {
-//     font-size: 1.5em;
-//   }
-// }
+  [type="submit"] {
+    font-size: 1.5em;
+  }
+}
 
-// .vin-decoded {
-//   width: 80%;
-//   margin: auto;
-//   list-style-type: none;
-//   font-size: 1.5em;
-//   font-family: Rockwell Extra Bold;
-//   color: blue;
-//   span {
-//     color: black;
-//   }
-// }
+.vin-decoded {
+  width: 80%;
+  margin: auto;
+  list-style-type: none;
+  font-size: 1.5em;
+  font-family: Rockwell Extra Bold;
+  color: blue;
+  span {
+    color: black;
+  }
+}
 
-// .field-container {
-//   width: 60%;
-//   margin: auto;
+.field-container {
+  width: 60%;
+  margin: auto;
 
-//   .field {
-//     float: left;    
-//     width: 100%;
-//     text-align: center;
-//     margin-top: 1em;
-//     select {
-//       font-size: 1.4em;
-//     }
+  .field {
+    float: left;    
+    width: 100%;
+    text-align: center;
+    margin-top: 1em;
+    select {
+      font-size: 1.4em;
+    }
 
-//     label {
-//       font-size: 1.6em;
-//       font-family: Rockwell Extra Bold;
-//     }
-//   }
+    label {
+      font-size: 1.6em;
+      font-family: Rockwell Extra Bold;
+    }
+  }
 
-//   input {
-//     font-size: 2em;
-//   }
-// }
+  input {
+    font-size: 2em;
+  }
+}
 
-// .submit-field {
-//   clear: both;
-//   margin: auto;
-//   text-align: center;
-//   input {
-//     margin-top: 1em;
-//     height: 2em;
-//   }
-// }
+.submit-field {
+  clear: both;
+  margin: auto;
+  text-align: center;
+  input {
+    margin-top: 1em;
+  }
+}
