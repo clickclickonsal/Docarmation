@@ -15,6 +15,7 @@
  *= require forms
  *= require sticky_footer
  *= require vin_decoder
+ *= require devise-style
  *= require media_queries
  *= require_self
  */
