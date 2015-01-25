@@ -1,79 +1,83 @@
-$main-font: Rockwell Extra Bold;
-@mixin linear-gradient($direction, $f-color, $f-percent, $s-color, $s-percent) {
-  background: -webkit-linear-gradient($direction, $f-color $f-percent, $s-color $s-percent); 
-    background: -moz-linear-gradient($direction, $f-color $f-percent, $s-color $s-percent);  
-      background: -o-linear-gradient($direction, $f-color $f-percent, $s-color $s-percent);
-        background: linear-gradient($direction, $f-color $f-percent, $s-color $s-percent);  
-}
+// $main-font: Rockwell Extra Bold;
+// @mixin linear-gradient($direction, $f-color, $f-percent, $s-color, $s-percent) {
+//   background: -webkit-linear-gradient($direction, $f-color $f-percent, $s-color $s-percent); 
+//   background: -moz-linear-gradient($direction, $f-color $f-percent, $s-color $s-percent);  
+//   background: -o-linear-gradient($direction, $f-color $f-percent, $s-color $s-percent);
+//   background: linear-gradient($direction, $f-color $f-percent, $s-color $s-percent);  
+// }
 
-.menu {
+// .menu {
+//   width: 100%;
+//   #site-name {
+//     margin: 0; 
+//     padding: 0;
+//     float: left;
+//     position: absolute;
+//   }
+//   ul {
+//     width: 100%;
+//     text-align: center;
+//     background: green; 
+//     // @include linear-gradient(top, #efefef, 0%, #bbbbbb, 100%);
+//     box-shadow: 0 0 0.563em rgba(0,0,0,0.15);
+//     padding: 0 1.25em;
+//     // border-radius: 0.625em;  
+//     list-style: none;
+//     position: relative;
+//     display: inline-table;
 
-  margin: auto;
-  width: 80%;
-  ul {
-    width: 100%;
-    text-align: center;
-    background: #efefef; 
-    @include linear-gradient(top, #efefef, 0%, #bbbbbb, 100%);
-    box-shadow: 0 0 0.563em rgba(0,0,0,0.15);
-    padding: 0 1.25em;
-    border-radius: 0.625em;  
-    list-style: none;
-    position: relative;
-    display: inline-table;
+//     ul {
+//       width: 20%;
+//       display: none;
+//       background: #5f6975; 
+//       border-radius: 0; 
+//       padding: 0;
+//       position: absolute; 
+//       top: 100%;
 
-    ul {
-      width: 20%;
-      display: none;
-      background: #5f6975; 
-      border-radius: 0; 
-      padding: 0;
-      position: absolute; 
-      top: 100%;
+//       li {
+//         float: none;
+//         width: 100%; 
+//         border-top: 0.05em solid #6b727c;
+//         border-bottom: 0.05em solid #575f6a;
+//         position: relative;
 
-      li {
-        float: none;
-        width: 100%; 
-        border-top: 0.05em solid #6b727c;
-        border-bottom: 0.05em solid #575f6a;
-        position: relative;
+//         a {
+//           padding: 0.938em 2.45em;
+//           color: #fff;
 
-        a {
-          padding: 0.938em 2.45em;
-          color: #fff;
+//           &:hover {
+//             background: #4b545f;
+//           }
+//         }
+//       }
+//     }
 
-          &:hover {
-            background: #4b545f;
-          }
-        }
-      }
-    }
+//     &:hover { 
+//       clear: both; 
+//     }
 
-    &:hover { 
-      clear: both; 
-    }
-
-    li {
-      float: left;
-      width: 25%;
-      &:hover > ul {
-        display: block;
-      }
-      &:hover {
-        background: #4b545f;
-        @include linear-gradient(top, #4f5964, 0%, #5f6975, 40%);
-        a {
-          color: #fff;
-          width: 70%;
-        }
-      }
-      a {
-        display: block; 
-        padding: 1.56em 2.45em;
-        color: #195; 
-        text-decoration: none;
-        font-weight: bold;
-      }
-    }
-  }
-}
+//     li {
+//       float: left;
+//       width: 25%;
+//       &:hover > ul {
+//         display: block;
+//       }
+//       &:hover {
+//         background: #4b545f;
+//         @include linear-gradient(top, #4f5964, 0%, #5f6975, 40%);
+//         a {
+//           color: #fff;
+//           width: 70%;
+//         }
+//       }
+//       a {
+//         display: block; 
+//         padding: 1.56em 2.45em;
+//         color: #195; 
+//         text-decoration: none;
+//         font-weight: bold;
+//       }
+//     }
+//   }
+// }

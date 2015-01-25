@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Docarmation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
     <%= include_gon %>
@@ -9,41 +10,39 @@
   </head>
   <body> 
     <div class="page-wrap">      
-      <h1 class="site-name">Docarmation</h1>
-      <h2 class="slogan">Vehicles have needs too...</h2>
-
       <nav class="menu">
-         <ul>
+       <h1 id="site-name"><%= link_to "Docarmation", vin_decoders_index_path %></h1>
+      <!--    <ul>
 
-            <li><%= link_to "Home", vin_decoders_index_path %></li>
 
-            <li><%= link_to "My Vehicle", vehicles_path %>
+            <li><%#= link_to "My Vehicle", vehicles_path %>
                <ul>
-                  <li><%= link_to "Add a Vehicle", new_vehicle_path %></li>
-                  <li><%= link_to "View My Vehicles", vehicles_path %></li>
+                  <li><%#= link_to "Add a Vehicle", new_vehicle_path %></li>
+                  <li><%#= link_to "View My Vehicles", vehicles_path %></li>
                </ul>
             </li>
 
-            <li><%= link_to "VIN Decoder", vin_decoders_new_path %></li>
+            <li><%#= link_to "VIN Decoder", vin_decoders_new_path %></li>
 
-            <li><%= link_to "Account" %>
+            <li><%#= link_to "Account" %>
                <ul>
-                  <% if !user_signed_in? %>
-                    <li><%= link_to "Sign Up", new_user_registration_path %></li>
-                    <li><%= link_to "Sign In", new_user_session_path %></li>
-                  <% else %>
-                    <li><%= link_to "Sign Out", destroy_user_session_path %></li>
-                  <% end %>
+                  <%# if !user_signed_in? %>
+                    <li><%#= link_to "Sign Up", new_user_registration_path %></li>
+                    <li><%#= link_to "Sign In", new_user_session_path %></li>
+                  <%# else %>
+                    <li><%#= link_to "Sign Out", destroy_user_session_path %></li>
+                  <%# end %>
                </ul>
             </li>
 
-         </ul>
+         </ul> -->
       </nav>
-
+      <!-- <h1 class="site-name">Docarmation</h1> -->
+      <h2 class="slogan">Vehicles have needs too...</h2>
       <%= yield %>
     </div>
   </body>
-
+<!-- 
   <footer class="site-footer">&copy; 2014 Docarmation | <a href="/homes">Home</a> | <a href="mailto:s.hernandez5400@gmail.com">Contact Me</a>
-  </footer>
+  </footer> -->
 </html>
