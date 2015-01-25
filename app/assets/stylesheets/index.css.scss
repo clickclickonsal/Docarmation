@@ -17,42 +17,29 @@ body {
   max-width: 90%;
 }
 
-// h1, h2 {
-//   font-size: 3em;
-//   text-align: center;
-//   font-family: $main-font;
-//   font-size: 3em;
-//   font-weight: bold;
-//   width: 50%;
-//   margin: auto;
-// }
+.list-vehicle {
+  list-style-type: none;
+  text-align: left;
+  width: 40%;
+  margin: 2em auto;
+  font-size: 1.6em;
+  font-weight: bold;
 
-// h2 {
-//   font-size: 1.3em;
-// }
+  li {
+    width: 90%;
+    margin-top: 0.4em;
+  }
 
-// .list-vehicle {
-//   list-style-type: none;
-//   text-align: center;
-//   width: 50%;
-//   margin: 1em auto;
-//   font-size: 1.6em;
-//   font-weight: bold;
+  button {
+    font-size: 1em;
+  }
 
-//   li {
-//     margin-top: 0.4em;
-//   }
-
-//   button {
-//     font-size: 1em;
-//   }
-
-//   a {
-//     text-decoration: none;
-//     font-weight: bold;
-//     color: blue;
-//   }
-// }
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: green;
+  }
+}
 
 // .delete-link, .back-link {
 //   font-size: 1.5em;

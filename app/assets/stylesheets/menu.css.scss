@@ -111,9 +111,11 @@ $main-font: Rockwell Extra Bold;
       border: 0.2em solid black;
       background: green;
       clear: both;
-      float: right;
+      right: 0;
+      top: 4em;
       width: 35%;
       height: 16.5em;
+      position:fixed;
       li {
         clear: both;
         float: left;
