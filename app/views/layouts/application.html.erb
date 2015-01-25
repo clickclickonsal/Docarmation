@@ -10,34 +10,20 @@
   </head>
   <body> 
     <div class="page-wrap">      
-      <!-- <nav class="menu"> -->
+      <nav class="menu">
        <h1 id="site-name"><%= link_to "Docarmation", vin_decoders_index_path %></h1>
-      <!--    <ul>
-
-
-            <li><%#= link_to "My Vehicle", vehicles_path %>
-               <ul>
-                  <li><%#= link_to "Add a Vehicle", new_vehicle_path %></li>
-                  <li><%#= link_to "View My Vehicles", vehicles_path %></li>
-               </ul>
-            </li>
-
-            <li><%#= link_to "VIN Decoder", vin_decoders_new_path %></li>
-
-            <li><%#= link_to "Account" %>
-               <ul>
-                  <%# if !user_signed_in? %>
-                    <li><%#= link_to "Sign Up", new_user_registration_path %></li>
-                    <li><%#= link_to "Sign In", new_user_session_path %></li>
-                  <%# else %>
-                    <li><%#= link_to "Sign Out", destroy_user_session_path %></li>
-                  <%# end %>
-               </ul>
-            </li>
-
-         </ul> -->
-      <!-- </nav> -->
-      <!-- <h1 class="site-name">Docarmation</h1> -->
+         <ul>
+            <% if !user_signed_in? %>
+              <li><%= link_to "Sign Up", new_user_registration_path %></li>
+              <li><%= link_to "Sign In", new_user_session_path %></li>
+            <% else %>
+              <li><%= link_to "Sign Out", destroy_user_session_path %></li>
+            <% end %>
+            <li><%= link_to "VIN Decoder", vin_decoders_new_path %></li>
+            <li><%= link_to "Add a Vehicle", new_vehicle_path %></li>
+            <li><%= link_to "My Vehicle", vehicles_path %></li>
+         </ul>
+      </nav>
       <!-- <h2 class="slogan">Vehicles have needs too...</h2> -->
       <%= yield %>
     </div>

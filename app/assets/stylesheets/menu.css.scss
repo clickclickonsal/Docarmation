@@ -1,4 +1,4 @@
-// $main-font: Rockwell Extra Bold;
+$main-font: Rockwell Extra Bold;
 // @mixin linear-gradient($direction, $f-color, $f-percent, $s-color, $s-percent) {
 //   background: -webkit-linear-gradient($direction, $f-color $f-percent, $s-color $s-percent); 
 //   background: -moz-linear-gradient($direction, $f-color $f-percent, $s-color $s-percent);  
@@ -6,52 +6,57 @@
 //   background: linear-gradient($direction, $f-color $f-percent, $s-color $s-percent);  
 // }
 
-// .menu {
-//   width: 100%;
-//   #site-name {
-//     margin: 0; 
-//     padding: 0;
-//     float: left;
-//     position: absolute;
-//   }
-//   ul {
-//     width: 100%;
-//     text-align: center;
-//     background: green; 
-//     // @include linear-gradient(top, #efefef, 0%, #bbbbbb, 100%);
-//     box-shadow: 0 0 0.563em rgba(0,0,0,0.15);
-//     padding: 0 1.25em;
-//     // border-radius: 0.625em;  
-//     list-style: none;
-//     position: relative;
-//     display: inline-table;
+.menu {
+  width: 100%;
+  background: green;
+  height: 5em;
+  #site-name {
+    margin: 0; 
+    padding: 0.2em 0;
+    font-size: 3em;
+    font-family: $main-font;
+    float: left;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+  ul {
+    float: right;
+    width: 60%;
+    height: 2.5em;
+    font-size: 2em;
+    // text-align: center;
+    // background: green; 
+    // // @include linear-gradient(top, #efefef, 0%, #bbbbbb, 100%);
+    // box-shadow: 0 0 0.563em rgba(0,0,0,0.15);
+    // padding: 0 1.25em;
+    // // border-radius: 0.625em;  
+    // list-style: none;
+    // position: relative;
+    // display: inline-table;
 
-//     ul {
-//       width: 20%;
-//       display: none;
-//       background: #5f6975; 
-//       border-radius: 0; 
-//       padding: 0;
-//       position: absolute; 
-//       top: 100%;
 
-//       li {
-//         float: none;
-//         width: 100%; 
-//         border-top: 0.05em solid #6b727c;
-//         border-bottom: 0.05em solid #575f6a;
-//         position: relative;
+    li {
+      float: right;
+      list-style-type: none;
+      padding: 0.5em 0.5em;
+    //   width: 100%; 
+    //   border-top: 0.05em solid #6b727c;
+    //   border-bottom: 0.05em solid #575f6a;
 
-//         a {
-//           padding: 0.938em 2.45em;
-//           color: #fff;
+      a {
+        text-decoration: none;
+        color: white;
+    //     padding: 0.938em 2.45em;
+    //     color: #fff;
 
-//           &:hover {
-//             background: #4b545f;
-//           }
-//         }
-//       }
-//     }
+    //     &:hover {
+    //       background: #4b545f;
+    //     }
+      }
+    }
+  }
 
 //     &:hover { 
 //       clear: both; 
@@ -80,4 +85,4 @@
 //       }
 //     }
 //   }
-// }
+}
