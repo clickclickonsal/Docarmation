@@ -11,6 +11,12 @@ body {
   width: 100%;
 }
 
+#home-image img {
+  display: block;
+  margin: 4em auto;
+  max-width: 90%;
+}
+
 // h1, h2 {
 //   font-size: 3em;
 //   text-align: center;
@@ -23,12 +29,6 @@ body {
 
 // h2 {
 //   font-size: 1.3em;
-// }
-
-// #home-image img {
-//   display: block;
-//   margin: auto;
-//   max-width: 90%;
 // }
 
 // .list-vehicle {
