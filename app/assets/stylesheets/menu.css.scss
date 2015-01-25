@@ -97,12 +97,58 @@ $main-font: Rockwell Extra Bold;
       display: none;
     }
     #hamburger-icon {
+      color: white;
       display: inline;
       float: right;
-      background: none;
+      background: green;
       border: none;
       font-size: 3em;
       padding-right: 0.5em;
+    }
+    .menu-ul-js {
+      display: block;
+      border: 0.2em solid black;
+      background: green;
+      clear: both;
+      float: right;
+      width: 35%;
+      height: 16.5em;
+      li {
+        clear: both;
+        float: left;
+        font-size: 1.4em;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .menu {
+    #site-name {
+      padding-top: 0.7em;
+      font-size: 1.8em;
+    }
+    & > .menu-ul-js {
+      width: 45%;
+      height: 17em;
+    }
+    li {
+      clear: both;
+      float: left;
+      font-size: 1.2em;
+    }
+  }
+}
+
+@media (max-width: 300px) {
+  .menu {
+    #site-name {
+      padding-top: 1em;
+      font-size: 1.4em;
+    }
+    & > .menu-ul-js {
+      width: 50%;
+      height: 17.5em;
     }
   }
 }
