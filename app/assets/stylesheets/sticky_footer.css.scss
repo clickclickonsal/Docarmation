@@ -23,8 +23,9 @@ html {
   a {
     text-decoration: none;
     color: #195;
+    transition: 1s;
     &:hover {
-      background: black;
+      color: black;
     }
   }
 }

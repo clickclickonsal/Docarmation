@@ -1,0 +1,47 @@
+.vin-container {
+	width: 50%;
+  margin: 1em auto;
+  text-align: center;
+  font-size: 1.6em;
+  color: #1f801f;
+  font-family:  Rockwell Extra Bold;
+	form > .field {
+		width: 100%;
+		text-align: center;
+		float: left;
+		label {
+			font-size: 1.5em;
+		}
+		input {
+			width: 50%;
+		}
+		[type="submit"] {
+    	font-size: 1.5em;
+  	}
+	}
+}
+
+
+.vin-decoded {
+  width: 80%;
+  margin: 4em auto;
+  list-style-type: none;
+  font-size: 1.5em;
+  font-family: Rockwell Extra Bold;
+  color: #1f801f;
+  span {
+    color: black;
+  }
+  li {
+  	width: 21em;
+  	padding-top: 0.4em;
+  	border-bottom: 0.1em solid grey;
+  }
+  button {
+  	a {
+  		text-decoration: none;
+  		color: #1f801f;
+  		font-size: 1.5em;
+  	}
+  }
+}

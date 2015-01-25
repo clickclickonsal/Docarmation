@@ -11,35 +11,22 @@ body {
   width: 100%;
 }
 
-h1, h2 {
-  font-size: 3em;
-  text-align: center;
-  font-family: $main-font;
-  font-size: 3em;
-  font-weight: bold;
-  width: 50%;
-  margin: auto;
-}
-
-h2 {
-  font-size: 1.3em;
-}
-
 #home-image img {
   display: block;
-  margin: auto;
+  margin: 4em auto;
   max-width: 90%;
 }
 
 .list-vehicle {
   list-style-type: none;
-  text-align: center;
-  width: 50%;
-  margin: 1em auto;
+  text-align: left;
+  width: 40%;
+  margin: 2em auto;
   font-size: 1.6em;
   font-weight: bold;
 
   li {
+    width: 90%;
     margin-top: 0.4em;
   }
 
@@ -50,7 +37,7 @@ h2 {
   a {
     text-decoration: none;
     font-weight: bold;
-    color: blue;
+    color: #1f801f;
   }
 }
 
@@ -71,13 +58,7 @@ h2 {
 .delete-link {
   clear: both;
   float: right;
-  margin-right: 4.5em;
-}
-
-.back-link {
-  clear: both;
-  float: left;
-  margin-left: 6em;
+  margin-right: 1em;
 }
 
 .vehicle-show {
@@ -97,10 +78,11 @@ h2 {
   a {
     text-decoration: none;
     font-size: 2em;
+    color: #1f801f;
 
     &:hover {
-      font-size: 20px;
-      color: red
+      color: black;
+      @include transition-all;
     }
   }
 }
@@ -118,7 +100,6 @@ h2 {
       font-size: 1.5em;
       @include transition-all;
       &:hover {
-        background: black;
         color: green;
         @include transition-all;
       }
