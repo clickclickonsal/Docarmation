@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 ruby '2.1.2'
+gem "autoprefixer-rails"
 # Pass Ruby code to Javascript :)
 gem 'gon'
 # edmunds gem
