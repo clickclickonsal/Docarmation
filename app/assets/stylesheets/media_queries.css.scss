@@ -52,8 +52,8 @@
     }
     .menu-ul-js {
       display: block;
-      border: 0.2em solid black;
-      background: green;
+      border: 0.1em solid black;
+      background: rgba(0, 128, 0, 0.78);
       clear: both;
       right: 0;
       top: 4em;
@@ -123,7 +123,7 @@
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 320px) {
   .menu {
     #site-name {
       padding-top: 1em;
@@ -131,6 +131,7 @@
     }
     & > .menu-ul-js {
       width: 50%;
+      padding-top: 0;
       height: 23em;
     }
   }
