@@ -123,7 +123,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 340px) {
   .menu {
     #site-name {
       padding-top: 1em;
@@ -141,6 +141,17 @@
     width: 69%;
     font-size: 1em;
   }
+  .list-vehicle > li > button {
+    font-size: 0.8em;
+    border: 1px solid black;
+    background: #efefef;
+    a {
+      transition: 1s;
+      &:hover {
+        color: black;
+      }
+    }
+  }
   .vin-container {
     width: 90%;
     font-size: 1em;
@@ -150,5 +161,13 @@
     padding-left: 0.5em;
     width: 100%;
     font-size: 0.9em;
+  }
+  .maintenance {
+    width: 90%;
+    font-size: 1.5em;
+    
+    select, [type="submit"] {
+      font-size: 0.6em;
+    }
   }
 }
