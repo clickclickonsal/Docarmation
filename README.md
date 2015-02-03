@@ -9,10 +9,10 @@
 
 ### Local Set Up
 * ```bundle``` or ```bundle install```
-* rake db:create
-* rake db:migrate
-* rake db:seed
-* rails s
+* ```rake db:create```
+* ```rake db:migrate```
+* ```rake db:seed```
+* ```rails s```
 
 ### Technologies Used
 
