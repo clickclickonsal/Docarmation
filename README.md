@@ -8,6 +8,7 @@
 [Visit Docarmation](http://docarmation.herokuapp.com/)
 
 ### Local Set Up
+* ```bundle``` or ```bundle install```
 * rake db:create
 * rake db:migrate
 * rake db:seed
