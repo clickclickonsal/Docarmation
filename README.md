@@ -8,10 +8,11 @@
 [Visit Docarmation](http://docarmation.herokuapp.com/)
 
 ### Local Set Up
-* rake db:create
-* rake db:migrate
-* rake db:seed
-* rails s
+* ```bundle``` or ```bundle install```
+* ```rake db:create```
+* ```rake db:migrate```
+* ```rake db:seed```
+* ```rails s```
 
 ### Technologies Used
 
